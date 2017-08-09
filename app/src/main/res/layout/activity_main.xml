@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ts"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.arifin.pelatihan.MainActivity">
+
+    <EditText
+        android:id="@+id/editnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="29dp"
+        android:hint="Nama" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Formulir Isian" />
+
+    <EditText
+        android:id="@+id/editalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editnama"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editnama"
+        android:hint="Alamat rumah" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editalamat"
+        android:hint="Alamat email" />
+
+    <Button
+        android:id="@+id/buttonoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rdbmulmed"
+        android:layout_below="@+id/editsekolah"
+        android:layout_marginTop="60dp"
+        android:text="Oke" />
+
+    <EditText
+        android:id="@+id/editsekolah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editemail"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editemail"
+        android:hint="Asal SMK" />
+
+    <EditText
+        android:id="@+id/hasilnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonoke"
+        android:textColor="#990011" />
+
+    <EditText
+        android:id="@+id/hasilalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/hasilnama"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hasilnama" />
+
+    <EditText
+        android:id="@+id/hasilemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hasilalamat" />
+
+    <EditText
+        android:id="@+id/hasilsekolah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/hasilemail"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hasilemail" />
+
+    <TextView
+        android:id="@+id/textjurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editsekolah"
+        android:text="Jurusan" />
+
+    <RadioButton
+        android:id="@+id/rbrpl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textjurusan"
+        android:checked="false"
+        android:text="RPL" />
+
+    <RadioButton
+        android:id="@+id/rdbtkj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rbrpl"
+        android:layout_toEndOf="@+id/rbrpl"
+        android:checked="false"
+        android:text="TKJ" />
+
+    <RadioButton
+        android:id="@+id/rdbmulmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rdbtkj"
+        android:layout_alignStart="@+id/textView"
+        android:checked="false"
+        android:text="Multimedia" />
+
+    <EditText
+        android:id="@+id/hasiljurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/hasilsekolah"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hasilsekolah" />
+
+</RelativeLayout>
