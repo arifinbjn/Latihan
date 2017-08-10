@@ -3,12 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ts"
+    android:background="#11ffffff"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.arifin.pelatihan.MainActivity">
+
+    <TextView
+        android:id="@+id/textjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Formulir Pendaftaran Pelatihan Android"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editnama"
@@ -16,17 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/textjudul"
         android:layout_marginTop="29dp"
         android:hint="Nama" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Formulir Isian" />
 
     <EditText
         android:id="@+id/editalamat"
@@ -46,14 +48,15 @@
         android:layout_below="@+id/editalamat"
         android:hint="Alamat email" />
 
-    <Button
-        android:id="@+id/buttonoke"
+    <EditText
+        android:id="@+id/edittelepon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/rdbmulmed"
-        android:layout_below="@+id/editsekolah"
-        android:layout_marginTop="60dp"
-        android:text="Oke" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editemail"
+        android:hint="Nomor telepon" />
+
 
     <EditText
         android:id="@+id/editsekolah"
@@ -61,41 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/editemail"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editemail"
+        android:layout_below="@+id/edittelepon"
         android:hint="Asal SMK" />
-
-    <EditText
-        android:id="@+id/hasilnama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/buttonoke"
-        android:textColor="#990011" />
-
-    <EditText
-        android:id="@+id/hasilalamat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/hasilnama"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/hasilnama" />
-
-    <EditText
-        android:id="@+id/hasilemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/hasilalamat" />
-
-    <EditText
-        android:id="@+id/hasilsekolah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/hasilemail"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/hasilemail" />
 
     <TextView
         android:id="@+id/textjurusan"
@@ -127,17 +97,46 @@
         android:id="@+id/rdbmulmed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/rdbtkj"
-        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/rdbtkj"
+        android:layout_toEndOf="@+id/rdbtkj"
         android:checked="false"
         android:text="Multimedia" />
 
-    <EditText
-        android:id="@+id/hasiljurusan"
+    <TextView
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/hasilsekolah"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/hasilsekolah" />
+        android:layout_below="@+id/rbrpl"
+        android:hint="Motivasi Ikut Pelatihan" />
+
+    <EditText
+        android:id="@+id/motivasi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:id="@+id/buttonoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:layout_toStartOf="@+id/rdbmulmed"
+        android:text="Oke" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/motivasi"
+        android:layout_alignTop="@+id/buttonoke"
+        android:layout_toEndOf="@+id/rdbmulmed"
+        android:text="Cancel" />
 
 </RelativeLayout>

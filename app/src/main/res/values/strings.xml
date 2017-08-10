@@ -1,17 +1,17 @@
 <resources>
-    <string name="app_name">TPCC Android</string>
+    <string name="app_name">Hasil Pelatihan Android</string>
     <string name="title_activity_maps">TPCC on the Map</string>
     <string name="splash_screen">Launch Screen</string>
-    <string name="day_1">Day 1</string>
-    <string name="play_with_android_studio">Play with Android Studio</string>
-    <string name="day_2">Day 2</string>
-    <string name="layout_and_single_page_app">Layout and Single Page App</string>
-    <string name="day_3">Day 3</string>
-    <string name="intent_and_multi_screen_app">Intent and Multi Screen App</string>
-    <string name="day_4">Day 4</string>
-    <string name="material_design_and_storage">Material Design and Storage</string>
-    <string name="day_5">Day 5</string>
-    <string name="background_services_and_app_distribution">Background Services and App Distribution</string>
+    <string name="day_1">Hari 1</string>
+    <string name="play_with_android_studio">Pengenalan Android Studio</string>
+    <string name="day_2">Hari 2</string>
+    <string name="layout_and_single_page_app">Layout dan Single Page </string>
+    <string name="day_3">Hari 3</string>
+    <string name="intent_and_multi_screen_app">Intent dan Multi Page</string>
+    <string name="day_4">Hari 4</string>
+    <string name="material_design_and_storage">Design Material dan Penyimpanan</string>
+    <string name="day_5">Hari 5</string>
+    <string name="background_services_and_app_distribution">Background Services dan Ujian TPCC</string>
     <string name="explanation">
         Type your text here, then share via other app.
     </string>

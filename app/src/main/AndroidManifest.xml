@@ -8,18 +8,26 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Agenda">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- intent untuk nampilan maps -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="geo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashScreen" />
+        <activity android:name=".Agenda" />
         <activity android:name=".TrainingDetails" />
         <activity android:name=".ShareActivity" />
-        <activity android:name=".MapsActivity"></activity>
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>

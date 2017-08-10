@@ -24,19 +24,19 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="208dp"
+                android:layout_height="208dp"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/android_logo_transparent_background" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textjudul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
-                android:text="Android Developer Training"
+                android:text="Junior Mobile Computing 2017"
                 android:textSize="35sp" />
         </FrameLayout>
 
@@ -53,17 +53,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="10dp"
-            android:background="#E5E5E5"
+            android:background="#FFE5E5E5"
             android:orientation="horizontal"
             android:paddingLeft="20dp"
             android:paddingRight="20dp">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="10dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:text="Venue"
-                android:textSize="16sp" />
+                android:text="Tempat"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tpcc_map"
@@ -71,9 +72,19 @@
                 android:layout_height="50dp"
                 android:layout_weight="2"
                 android:paddingLeft="10dp"
-                android:text="Telkom PCC - MAP here"
+                android:text="Telkom PCC Bandung"
                 android:textColor="?android:attr/colorFocusedHighlight"
                 android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/buttonmaps"
+                android:layout_width="10dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/maps"
+                android:paddingLeft="7dp"
+
+                android:textColor="?android:attr/colorFocusedHighlight" />
         </LinearLayout>
 
         <LinearLayout
@@ -86,11 +97,12 @@
             android:paddingRight="20dp">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="15dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:text="Date"
-                android:textSize="16sp" />
+                android:text="Tanggal"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/schedule"
@@ -98,7 +110,25 @@
                 android:layout_height="50dp"
                 android:layout_weight="2"
                 android:paddingLeft="10dp"
-                android:text="7 - 11 Agustus, 2017"
+                android:text="7-11-August 2017"
+                android:textColor="?android:attr/colorFocusedHighlight"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Pukul"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jam"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:paddingLeft="10dp"
+                android:text="08:00 - 16:30"
                 android:textColor="?android:attr/colorFocusedHighlight"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -118,7 +148,8 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:text="Agenda"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/android_agenda"
@@ -126,7 +157,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="2"
                 android:paddingLeft="10dp"
-                android:text="5 day series of Android Fundamentals"
+                android:text="Pelatihan Junior Mobile Computing/Android"
                 android:textColor="?android:attr/colorFocusedHighlight"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -144,8 +175,9 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:text="Prerequisites"
-                android:textSize="16sp" />
+                android:text="Prasyarat"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/java_text"
@@ -165,6 +197,14 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:background="@android:color/darker_gray"></View>
+
+        <Button
+            android:id="@+id/buttondaftar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0206F9"
+            android:text="DAFTAR"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

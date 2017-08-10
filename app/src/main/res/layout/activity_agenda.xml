@@ -37,14 +37,15 @@
                 android:src="@drawable/ruled_paper_note_with_pin" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textjudul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 android:fontFamily="sans-serif"
                 android:gravity="center_horizontal"
-                android:text="Agenda"
-                android:textSize="35sp" />
+                android:text="Agenda Pelatihan"
+                android:textSize="35sp"
+                android:textStyle="bold" />
         </FrameLayout>
 
 
